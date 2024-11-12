@@ -1,8 +1,8 @@
 # awesome-nepali-llm : [![Awesome](https://awesome.re/badge-flat.svg)](https://awesome.re)
 
-### Awesome Nepali NLP 🌐🇳🇵
+### Awesome Nepali NLP🇳🇵
 
-> Inspired by [awesome-cultural-nlp](https://github.com/simran-khanuja/awesome-cultural-nlp) ✨
+> Inspired by [awesome-cultural-nlp](https://github.com/simran-khanuja/awesome-cultural-nlp) 
 
 ## Table of Contents
 - [Datasets](#datasets)
