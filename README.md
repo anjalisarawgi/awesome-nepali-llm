@@ -1,2 +1,3 @@
-# awesome-nepali-llm : ![GitHub stars](https://img.shields.io/github/stars/anjalisarawgi/awesome-nepali-llm?style=social)
-Nepali LLMs research resources 
+# awesome-nepali-llm : [![Awesome](https://awesome.re/badge-flat.svg)](https://awesome.re)
+
+> Inspired by [awesome-cultural-nlp](https://github.com/simran-khanuja/awesome-cultural-nlp) ✨
