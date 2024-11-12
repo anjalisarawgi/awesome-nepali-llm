@@ -16,9 +16,10 @@
 
 | Title | Source | Paper | Use Case | Notes |
 |-------|--------|-------|------|----------|
-| **Nepali Text Corpus** | [IRII Nepal / Nepali Text Corpus on Hugging Face]([https://huggingface.co/datasets/IRII/IRII-Nepali-Text-Corpus](https://huggingface.co/datasets/IRIISNEPAL/Nepali-Text-Corpus)) | N/A | A monolingual corpus, possibly to train the model better for understanding Nepali language| (first step for indic models)
+| **Nepali Text Corpus** | [IRIIS Nepal / Nepali Text Corpus on Hugging Face](https://huggingface.co/datasets/IRIISNEPAL/Nepali-Text-Corpus) | N/A | A monolingual corpus, possibly to train the model better for understanding Nepali language| (first step for indic models)
+| **XL-Sum Nepali Summarization Dataset** | [sanjeev-bhandari01/XL-Sum-nepali-summerization-dataset on Hugging Face](https://huggingface.co/datasets/sanjeev-bhandari01/XLSum-nepali-summerization-dataset) | N/A   | Summarization and text generation          | Contains labeled sumamry data which is useful for summarization training (title, text, summary) |
 
 ### Nepali Text Corpus
-- **Size**: 6.4 million articles (27.5 GB)
+- **Size**: 7,258
 - **Languages**: Nepali
-- **Content**:  Nepali news websites, blogs, and other online platforms
+- **Content**:  --
