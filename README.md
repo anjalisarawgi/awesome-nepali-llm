@@ -14,12 +14,7 @@
 
 ## Datasets
 
-| Title | Source | Paper | Use Case | Notes |
-|-------|--------|-------|------|----------|
-| **Nepali Text Corpus** | [IRIIS Nepal / Nepali Text Corpus on Hugging Face](https://huggingface.co/datasets/IRIISNEPAL/Nepali-Text-Corpus) | N/A | A monolingual corpus, possibly to train the model better for understanding Nepali language| (first step for indic models)
-| **XL-Sum Nepali Summarization Dataset** | [sanjeev-bhandari01/XL-Sum-nepali-summerization-dataset on Hugging Face](https://huggingface.co/datasets/sanjeev-bhandari01/XLSum-nepali-summerization-dataset) | N/A   | Summarization and text generation          | Contains labeled sumamry data which is useful for summarization training (title, text, summary) |
-
-### Nepali Text Corpus
-- **Size**: 7,258
-- **Languages**: Nepali
-- **Content**:  --
+| Title | Source | Paper | Use Case | Notes | Size |
+|-------|--------|-------|------|----------|-------|
+| **Nepali Text Corpus** | [IRIIS Nepal / Nepali Text Corpus on Hugging Face](https://huggingface.co/datasets/IRIISNEPAL/Nepali-Text-Corpus) | N/A | A monolingual corpus, possibly to train the model better for understanding Nepali language| (first step for indic models)| 6.4 million articles |
+| **XL-Sum Nepali Summarization Dataset** | [sanjeev-bhandari01/XL-Sum-nepali-summerization-dataset on Hugging Face](https://huggingface.co/datasets/sanjeev-bhandari01/XLSum-nepali-summerization-dataset) | N/A   | Summarization and text generation          | Contains labeled sumamry data which is useful for summarization training (title, text, summary) | 7,258 rows |
