@@ -15,11 +15,11 @@
 - [Contributions](#contributions)
 
 ## Nepali Language Specifics (source: [wikipedia](https://en.wikipedia.org/wiki/Nepali_language))
-Speakers: 32 million
-Language Family: Indo Aryan family (more specifically, Eastern Pahari)
-Currently majorly spoken in: Nepal, India (Sikkim, West Bengal)
-Language code: ne, nep, npi
-Script: Devangiri Script
+- Speakers: 32 million
+- Language Family: Indo Aryan family (more specifically, Eastern Pahari)
+- Currently majorly spoken in: Nepal, India (Sikkim, West Bengal)
+- Language code: ne, nep, npi
+- Script: Devangiri Script
 
 ## Old Nepali vs Modern Nepali
 1. Old Nepali (Prachin Nepali)
@@ -45,14 +45,14 @@ Note: Khara Prakrit is a language build from sanskrit
 
 ## Pre trained models
 
-| Title | Paper | Source | Training Data | Task Strengths | Fine-Tuning |  Limitations | Size | Availability | Notes 
-|-------|--------|-------|------|----------|-------| -------| -------| -------| -------| 
-| **indicBERT** | |  | | | | ||||
-| **indicBART** | |  | | | |||||
-| **MuRIL** | |  | | | |||||
-| **mT5** | |  | | | |||||
-| **byT5 (dharmamitra model)** | |  | | | |||||
-| **XLM-ROBERTA** | |  | | | |||||
-| **mBERT** | |  | | | |||||
-| **BART** | |  | | | |||||
-| **LLAMA** | |  | | | |||||
+| Title | Paper | Source | Training Data | Task Strengths | Fine-Tuning |  Limitations | Size | Availability | Notes | Tested | 
+|-------|------|-------|----------|----------|----------| ----------| ----------| -------| -------| -------| 
+| **indicBERT** | |  | | | | |||| |
+| **indicBART** | |  | | | ||||| |
+| **MuRIL** | |  | | | ||||| |
+| **mT5** | |  | | | ||||| |
+| **byT5 (dharmamitra model)** | |  | | | ||||| |
+| **XLM-ROBERTA** | |  | | | ||||| |
+| **mBERT** | |  | | | ||||| |
+| **BART** | |  | | | ||||| |
+| **LLAMA3** | https://arxiv.org/abs/2407.21783 | Meta | Multilingual and includes English, Hindi, though Neali is limited in representation + also can be combined for image, video and speech capabilities | Handles complex tasks and nuances, efficient cross lingual transfer | Cross lingual finetuning to make it better for Modern nepali | Very Resource intensive | 8B / 70B / 405B|| powerful but resource intensive | Not yet |
