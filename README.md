@@ -4,6 +4,8 @@
 
 > Inspired by [awesome-cultural-nlp](https://github.com/simran-khanuja/awesome-cultural-nlp) 
 
+#### Nepali Language Specifics
+
 ## Table of Contents
 - [Datasets](#datasets)
 - [Pretrained Models](#pretrained-models)
@@ -12,6 +14,28 @@
 - [Notes](#applications)
 - [Contributions](#contributions)
 
+## Nepali Language Specifics (source: [wikipedia](https://en.wikipedia.org/wiki/Nepali_language))
+Speakers: 32 million
+Language Family: Indo Aryan family (more specifically, Eastern Pahari)
+Currently majorly spoken in: Nepal, India (Sikkim, West Bengal)
+Language code: ne, nep, npi
+Script: Devangiri Script
+
+## Old Nepali vs Modern Nepali
+1. Old Nepali (Prachin Nepali):
+A version of Khasa Prakrit
+Heavily dependent on Classical Sanskrit
+It retained many formal or classical terms which are not common in modern usage
+Usually used in legal, religous or political documents
+Very complex in structure and high honorfics (formalities)
+Uses Devangiri Script variations and spellings
+
+3. Modern Nepali
+The next step from Khasa Prakrit
+Has alot of similar words from Hindi, English too
+Has formalized and standardized variations and spellings whichsmakes it simpler
+
+Note: Khara Prakrit is a language build from sanskrit
 ## Datasets
 
 | Title | Source | Paper | Use Case | Notes | Size |
@@ -31,3 +55,4 @@
 | **XLM-ROBERTA** | |  | | | |||||
 | **mBERT** | |  | | | |||||
 | **BART** | |  | | | |||||
+| **LLAMA** | |  | | | |||||
