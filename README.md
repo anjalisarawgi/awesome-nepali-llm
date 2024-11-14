@@ -10,9 +10,7 @@
 - [Datasets](#datasets)
 - [Pretrained Models](#pretrained-models)
 - [Tasks](#tasks)
-- [Research Papers](#research-papers)
-- [Applications](#applications)
-- [Notes](#applications)
+- [Notes](#notes)
 - [Contributions](#contributions)
 
 ## Nepali Language Specifics (source: [wikipedia](https://en.wikipedia.org/wiki/Nepali_language))
