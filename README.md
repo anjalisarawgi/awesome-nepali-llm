@@ -10,7 +10,7 @@
 - [Datasets](#datasets)
 - [Pretrained Models](#pretrained-models)
 - [Tasks](#tasks)
-- [Notes](#notes)
+- [Notes on Model Selection](#Noteson-Model-Selection)
 - [Contributions](#contributions)
 
 ## Nepali Language Specifics (source: [wikipedia](https://en.wikipedia.org/wiki/Nepali_language))
@@ -72,3 +72,33 @@ Note: Khara Prakrit is a language build from sanskrit
 | XLM-RobERTa | Classification, NER, QA  - powerful cross lingual understanding | Not designed for tex generation | Useful for this project | 
 | Indic Models (indicBART, indicBERT) | Trained on Indo Aryan Language family only, so more focused  | Contains Nepali data, but not focused on Nepali language training | Most preffered in theory, but the tunings results so far are not the best|
 | Specialized Models (Dharmamitra for Sanskrit (byt5-- not sure), MuRIL for Indian Languages) | Very good for morphological understanding | needs alot of computational resources | Useful for this task -- MuRIL is also trained on english which helps with multiple language tasks |
+
+
+## Notes on Model Selection
+The models selected for the project will build upon **Indic models** to leverage their language-specific strengths, particularly for Nepali and Sanskrit (for Old Nepali). Below are some notes for each model:
+
+### IndicBERT (Transformer-Based Model)
+  - A solid choice for text understanding tasks.
+  - Trained on Nepali corpus and supports Sanskrit, making it suitable for both modern and Old Nepali.
+  - Fine-tuning may require multiple steps: initial fine-tuning on a large Nepali dataset, followed by task-specific fine-tuning.
+  - As a BERT-based model, it’s highly suited for our case, which focuses on language understanding.
+  - Non-generative, which may pose some limitations depending on task requirements.
+  - Alternatives for this model would be MuRIL and / or mBART
+
+### MuRIL
+  - Includes English training data, enhancing multi-language understanding. This would be very useful for Modern Nepali
+  - A suitable alternative for IndicBERT 
+  - However, it doesn't train on alot a massive sanskrit dataset. And indicBERT may be better in this case
+
+### ByT5 (Dharmamitra) 
+  - Ideal for handling the morphological complexity of Old Nepali.
+
+### mBART
+  - If we need a generative model 
+
+---
+
+### Summary
+All of these models are based on the transformer architecture. To start, **IndicBERT** is a solid choice for tasks that require understanding Nepali and Sanskrit Texts. If we have generative tasks we could additionally add **mBART** too. 
+
+We could also consider **MuRIL** because its good at handling multiple languages (English, Nepali, and Hindi) which could be helpful for modern Nepali because modern Nepali uses elements from English and Hindi. MuRIL also is comparable in performance with **indicBERT** in alot of tasks. And finally for old Nepali based tasks, the **ByT5-Sanskrit** model by Dharmamitra is a good choice. 
