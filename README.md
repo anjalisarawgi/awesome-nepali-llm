@@ -42,7 +42,7 @@ Note: Khara Prakrit is a language build from sanskrit
 | Title | Source | Paper | Use Case | Notes | Size |
 |-------|--------|-------|------|----------|-------|
 | **Nepali Text Corpus** | [IRIIS Nepal / Nepali Text Corpus on Hugging Face](https://huggingface.co/datasets/IRIISNEPAL/Nepali-Text-Corpus) | N/A | A monolingual corpus, possibly to train the model better for understanding Nepali language| (first step for indic models)| 6.4 million articles |
-| **XL-Sum Nepali Summarization Dataset** | [sanjeev-bhandari01/XL-Sum-nepali-summerization-dataset on Hugging Face](https://huggingface.co/datasets/sanjeev-bhandari01/XLSum-nepali-summerization-dataset) | N/A   | Summarization and text generation          | Contains labeled sumamry data which is useful for summarization training (title, text, summary) | 7,258 rows |
+| **XL-Sum Nepali Summarization Dataset** | [sanjeev-bhandari01/XL-Sum-nepali-summerization-dataset on Hugging Face](https://huggingface.co/datasets/sanjeev-bhandari01/XLSum-nepali-summerization-dataset) | N/A   | Summarization and text generation          | Contains labeled summary data which is useful for summarization training (title, text, summary) | 7,258 rows |
 
 ## Pre trained models
 
@@ -67,4 +67,4 @@ Note: Khara Prakrit is a language build from sanskrit
 | Multilingual Models (XLM-RoBERTa, mBERT, mT5) | Understanding and generating text in multiple languages, cross linfual understanding and translations | They may not capture the nuances of each individual languages deeply, as monolingual models since they are trained on a vast set of languages| Could be leveraged if indic models don't work|
 | mT5, T5 | Text generations tasks like translations, summarization, question answering etc | | Not for the scope of this project| 
 | Indic Models | Trained on Indo Aryan Language family only, so more focused  | Contains Nepali data, but not focused on Nepali language training | Most preffered in theory, but the tunings results so far are not the best|
-| Specialized Models (Dharmamitra for Sanskrit (byt5-- not sure), MuRIL for Indian Languages) | Very good for morphological understanding | | Useful for this task|
+| Specialized Models (Dharmamitra for Sanskrit (byt5-- not sure), MuRIL for Indian Languages) | Very good for morphological understanding | | Useful for this task -- MuRIL is also trained on english which helps with multiple language tasks |
