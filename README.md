@@ -46,19 +46,20 @@ Note: Khara Prakrit is a language build from sanskrit
 | **FLORES** | 
 | **Common Crawl Oscar Corpus** | 
 | **IndicCorp** | 
+| **mC4** | 
+| **sangraha dataset (sanskrit)** | 
 | **check Muril** | 
+
 ## Pre trained models
 
 | Title | Paper | Source | Training Data | Task Strengths | Fine-Tuning |  Limitations | Size | Notes | 
 |-------|------|-------|----------|----------|----------| ----------| ----------| -------| 
-| **indicBERT** ✅| [https://arxiv.org/abs/2212.05409](https://arxiv.org/abs/2212.05409) | AI4Bharat | 22 languages (including Nepali), indicCorp (monolingual text mostly) |  MLM and TLM, NER, classification, QA | | Non generative, limited focus on Nepali | | A solid baseline model to start with | |
-| **indicBART** |  [https://arxiv.org/abs/2109.02903](https://arxiv.org/abs/2109.02903) | AI4Bharat | 11 languages (not Nepali)| Translation, Summarization | Finetune on Nepali tasks for summarization or translation | Nepali is not a part of the training data | | Testedm and not good since it has seen no nepali data during training |
-| **MuRIL** ✅ ✅ | [https://arxiv.org/abs/2103.10730](https://arxiv.org/abs/2103.10730) | Google | 17 languages (includes Nepali) (translations, transilerations, code-mixed data) | MLM and TLM , translated and transilerated pairs, built on the BERT model, contains english texts too|  NER, classification, QA | | Outperforms mBERT, trained on english too helping with modern nepali, has cross lingual capabilities 
-| **mT5** | |  | | | ||||| |
-| **byT5 (dharmamitra model)** | |  | | | ||||| |
-| **XLM-RoBERTa** | |  | | | ||||| |
-| **mBERT** | |  | | | ||||| |
-| **BART** | |  | | | ||||| |
+| **indicBERT** ✅| [https://arxiv.org/abs/2212.05409](https://arxiv.org/abs/2212.05409) | AI4Bharat | 22 languages (including Nepali), indicCorp (monolingual text mostly) |  MLM and TLM, NER, classification, QA | | Non generative, limited focus on Nepali | | A solid baseline model to start with, much lighter than mT5| |
+| **indicBART** |  [https://arxiv.org/abs/2109.02903](https://arxiv.org/abs/2109.02903) | AI4Bharat | 11 languages (not Nepali) (generative model) | Translation, Summarization | Finetune on Nepali tasks for summarization or translation | Nepali is not a part of the training data | | Testedm and not good since it has seen no nepali data during training |
+| **mBART**  ✅ |  [https://arxiv.org/abs/2001.08210](https://arxiv.org/abs/2001.08210)] | Facebook | 25 languages (including Nepali) (generative model) | Translation, Summarization | Finetune on Nepali tasks for summarization or translation | Nepali is a part of the training data | | Not tested yet, but a good starting point for generative tasks  |
+| **MuRIL** ✅ ✅ | [https://arxiv.org/abs/2103.10730](https://arxiv.org/abs/2103.10730) | Google | 17 languages (includes Nepali) (translations, transilerations, code-mixed data) | MLM and TLM , translated and transilerated pairs, built on the BERT model, contains english texts too|  NER, classification, QA | Outperforms mBERT, trained on english too helping with modern nepali, has cross lingual capabilities (cross lingual capabilities) | | Most ideal starting point
+| **byT5 (dharmamitra model)** ✅ | [https://arxiv.org/abs/2409.13920](https://arxiv.org/abs/2409.13920)| Dharmamitra, BAIR | Mixed quality sanskrit text data, OCR text, high quality sanskrit corpora|Word segmentation, lemmatization, morphosyntactic tagging, dependency parsing, OCR correction | Fine tune on old nepali tasks (sanskrit references) | very resource intencve, slower processing due to byle level approach || Ideal for old nepali finetuning |
+| **mT5** | [https://arxiv.org/abs/2010.11934](https://arxiv.org/abs/2010.11934) | Google | Multilingual mC4 corpus, 101 languages including Nepali (also has english, useful for modern Neali) | NER, classification, QA (mt5 XXL outperforms mBERT on these tasks), Text generation, translation, summarization,| | Reosurce intensive; finetuned on many languages may deviate from the focus of Nepali ||The performace is decent, could be explored if indicBERT doesnt work, and could be used if our purpose is generative tasks |
 | **LLAMA3** | https://arxiv.org/abs/2407.21783 | Meta | Multilingual and includes English, Hindi, though Nepali is limited in representation + also can be combined for image, video and speech capabilities | Handles complex tasks and nuances, efficient cross lingual transfer | Cross lingual finetuning to make it better for Modern nepali | Very Resource intensive | 8B / 70B / 405B| powerful but resource intensive |
 
 
