@@ -12,6 +12,7 @@
 - [Tasks](#tasks)
 - [Notes on Model Selection](#Noteson-Model-Selection)
 - [IndicBERT for Nepali](#indic-bert-for-Nepali)
+- [MuRIL for Nepali](#muril-for-Nepali)
 - [Contributions](#contributions)
 
 ## Nepali Language Specifics (source: [wikipedia](https://en.wikipedia.org/wiki/Nepali_language))
@@ -44,10 +45,15 @@ Note: Khara Prakrit is a language build from sanskrit
 | **XL-Sum Nepali Summarization Dataset** | [sanjeev-bhandari01/XL-Sum-nepali-summerization-dataset on Hugging Face](https://huggingface.co/datasets/sanjeev-bhandari01/XLSum-nepali-summerization-dataset) | N/A   | Summarization and text generation          | Contains labeled summary data which is useful for summarization training (title, text, summary) | 7,258 rows |
 | **FLORES** | 
 | **Common Crawl Oscar Corpus** | 
-| **IndicCorp** | 
+| **IndicCorpV2** | 
 | **mC4** | 
-| **sangraha dataset (sanskrit)** | 
+| **sangraha (sanskrit & Nepali)** | 
+| **Samanantar(flores)** |
+| **indic-align(indicLLMSuite)** |
+| **wiki-translate(indicLLMSuite)** |
+| **wiki-transilerate(indicLLMSuite)** |
 | **check Muril** | 
+| **check ariavata evaluation suite**|
 
 ## Pre trained models
 
@@ -100,10 +106,19 @@ The models selected for the project will build upon **Indic models** to leverage
 
 ## IndicBERT for Nepali
 | Model | Size | Dataset | Tested | Performance | Notes
-|-------|------|-------|----------|----------|----------| ----------| 
+|-------|------|-------|----------|----------|----------| 
 | **IndicBERTv2-MLM-only** | 278M parameters| IndicCorp v2  | ✅ | Good for MLM | | 
 | **IndicBERTv2-MLM-back_tlm** | 278M parameters | IndicCorp v2 (back translation using indicTrans)  | ✅ | Strong at English-Nepali multilingual tasks | Suitable  Nepali-English bilingual NLP |
 | **IndicBERTv2-MLM-ss** | 278M parameters | IndicCorp v2  | ✅ | Script Sharing Capabilities | Nepali is already written in Devangiri Script |
+
+
+
+
+## MuRIL for Nepali
+| Model | Size | Dataset | Tested | Performance | Notes
+|-------|------|-------|----------|----------|----------| 
+| **MuRIL MLM Cased Temp** | |  | ✅ | Good for MLM | Since its good for MLM, might be useful for morphological learning | 
+| **MuRIL Cased Temp** | |  | ✅ | Poor performance for MLM, NER (need to check), sentence class, | Not alot of focus on Nepali , maybe finetuning will be helpful; Recommended for feature extraction | 
 
 ---
 
