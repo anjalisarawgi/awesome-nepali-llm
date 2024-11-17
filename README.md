@@ -11,6 +11,7 @@
 - [Pretrained Models](#pretrained-models)
 - [Tasks](#tasks)
 - [Notes on Model Selection](#Noteson-Model-Selection)
+- [IndicBERT for Nepali](#indic-bert-for-Nepali)
 - [Contributions](#contributions)
 
 ## Nepali Language Specifics (source: [wikipedia](https://en.wikipedia.org/wiki/Nepali_language))
@@ -95,6 +96,14 @@ The models selected for the project will build upon **Indic models** to leverage
 
 ### mBART
   - If we need a generative model 
+
+
+## IndicBERT for Nepali
+| Model | Size | Dataset | Tested | Performance | Notes
+|-------|------|-------|----------|----------|----------| ----------| 
+| **IndicBERTv2-MLM-only** | 278M parameters| IndicCorp v2  | ✅ | Good for MLM | | 
+| **IndicBERTv2-MLM-back_tlm** | 278M parameters | IndicCorp v2 (back translation using indicTrans)  | ✅ | Strong at English-Nepali multilingual tasks | Suitable  Nepali-English bilingual NLP |
+| **IndicBERTv2-MLM-ss** | 278M parameters | IndicCorp v2  | ✅ | Script Sharing Capabilities | Nepali is already written in Devangiri Script |
 
 ---
 
