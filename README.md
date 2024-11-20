@@ -39,11 +39,13 @@
 Note: Khara Prakrit is a language build from sanskrit
 ## Datasets
 
-| Title | Source | Paper | Nepali Samples | Labels | Notes | Tasks | 
+| Title | Source | Link | Nepali Samples | Labels | Notes | Tasks | 
 |-------|--------|-------|------|----------|-------|------|
 | **IndicCOPA** | AI4Bharat | [paper](https://arxiv.org/abs/2212.05409) | 500 | Binary (0 for choice1, 1 for choice2) |Focuses on commonsense reasoning with cause and effect reasoning tasks. Labels indicate the correct alternative. Translated into Nepali from the original COPA dataset with manual annotation | Reasoning, Q and A |
 | **FLORES 200** | Facebook | | 1012 | None (parallel dataset) | Contains 1012 parallel sentences manually translated into 200 languages, including Nepali. Uses mean pooled representations. | Translations (English-Nepali-Hindi), Language Understanding | 
-| **IndicCorp V2** | AI4Bharat | [paper](https://arxiv.org/abs/2212.05409) | 852 tokens, 14.8 GB |  None | None	Largest monolingual corpus for 24 Indic languages. Nepali data is included, focusing on clean and diverse text. Built from sources like Wikipedia, news, blogs, and government documents | Language Modeling, Pretraining, Fine-Tuning | w
+| **IndicCorp V2** | AI4Bharat | [paper](https://arxiv.org/abs/2212.05409) | 852 tokens, 14.8 GB  | None	Largest monolingual corpus for 24 Indic languages. Nepali data is included, focusing on clean and diverse text. Built from sources like Wikipedia, news, blogs, and government documents | Language Modeling, Pretraining, Fine-Tuning | 
+| **OSCAR-2021** | Common Crawl | [website](https://oscar-project.org/)| 852 tokens, 14.8 GB |  391,947 | None (has text labels, and word language probabilties) | Language Modeling, Pretraining, Fine-Tuning | Language Modelling, Text Summarization |
+
 
 <!-- 
 | **Nepali Text Corpus** | [IRIIS Nepal / Nepali Text Corpus on Hugging Face](https://huggingface.co/datasets/IRIISNEPAL/Nepali-Text-Corpus) | N/A | A monolingual corpus, possibly to train the model better for understanding Nepali language| (first step for indic models)| 6.4 million articles |
